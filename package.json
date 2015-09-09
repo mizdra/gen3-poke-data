@@ -11,7 +11,6 @@
   ],
   "scripts": {
     "test": "mocha --compilers js:babel/register test/**/*.js",
-    "publish": "npm publish --access=public"
   },
   "repository": "mizdra/gen3-poke-data",
   "license": "MIT",
