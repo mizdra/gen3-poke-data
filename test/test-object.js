@@ -2,10 +2,7 @@
 
 import PokeData from '../dist';
 
-const testObj = {};
-export default testObj;
-
-testObj['フシギダネ'] = new PokeData({
+export const フシギダネ = new PokeData({
     "id": 1 | 0,
     "national_id": 1 | 0,
     "name": "フシギダネ",
@@ -41,7 +38,7 @@ testObj['フシギダネ'] = new PokeData({
     "abilities": ["しんりょく"]
 });
 
-testObj['ピカチュウ'] = new PokeData({
+export const ピカチュウ = new PokeData({
     "id": 25 | 0,
     "national_id": 25 | 0,
     "name": "ピカチュウ",
@@ -74,7 +71,7 @@ testObj['ピカチュウ'] = new PokeData({
     "abilities": ["せいでんき"]
 });
 
-testObj['ハピナス'] = new PokeData({
+export const ハピナス = new PokeData({
     "id": 269 | 0,
     "national_id": 242 | 0,
     "name": "ハピナス",
@@ -110,7 +107,7 @@ testObj['ハピナス'] = new PokeData({
     ]
 });
 
-testObj['デオキシス'] = new PokeData({
+export const デオキシス = new PokeData({
     "id": 416,
     "national_id": 386,
     "name": "デオキシス",

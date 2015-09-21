@@ -3,56 +3,56 @@
 import should from 'should';
 import assert from 'assert';
 import PokeData from '../dist';
-import testObj from './test-object';
+import {フシギダネ, ピカチュウ, ハピナス, デオキシス} from './test-object';
 
 describe('PokeData', () => {
 
   it('PokeData#id', () => {
-    testObj['デオキシス'].id.should.equal(416);
+    デオキシス.id.should.equal(416);
   });
 
   it('PokeData#nationalId', () => {
-    testObj['デオキシス'].nationalId.should.equal(386);
+    デオキシス.nationalId.should.equal(386);
   });
 
   it('PokeData#name', () => {
-    testObj['フシギダネ'].name.should.equal('フシギダネ');
+    フシギダネ.name.should.equal('フシギダネ');
   });
 
   it('PokeData#formName', () => {
-    testObj['デオキシス'].formName.should.equal('ノーマルフォルム');
+    デオキシス.formName.should.equal('ノーマルフォルム');
   });
 
   it('PokeData#height', () => {
-    testObj['フシギダネ'].height.should.equal(7 | 0);
+    フシギダネ.height.should.equal(7 | 0);
   });
 
   it('PokeData#weight', () => {
-    testObj['フシギダネ'].weight.should.equal(69 | 0);
+    フシギダネ.weight.should.equal(69 | 0);
   });
 
   it('PokeData#types', () => {
-    let actual = testObj['フシギダネ'].types;
+    let actual = フシギダネ.types;
     let except = ["くさ", "どく"];
     assert.deepEqual(actual, except);
   });
 
   it('PokeData#baseStats', () => {
-    let actual = testObj['フシギダネ'].baseStats;
+    let actual = フシギダネ.baseStats;
     let except = [45|0, 49|0, 49|0, 45|0, 65|0, 65|0];
     assert.deepEqual(actual, except);
   });
 
   it('PokeData#genderThreshold', () => {
-    testObj['フシギダネ'].genderThreshold.should.equal(31|0);
+    フシギダネ.genderThreshold.should.equal(31|0);
   });
 
   it('PokeData#catchRate', () => {
-    testObj['デオキシス'].catchRate.should.equal(3|0);
+    デオキシス.catchRate.should.equal(3|0);
   });
 
   it('PokeData#heldItems', () => {
-    let actual = testObj['ピカチュウ'].heldItems;
+    let actual = ピカチュウ.heldItems;
     let except = {
         "rse": {
             "rarely": "でんきだま",
@@ -69,7 +69,7 @@ describe('PokeData', () => {
   });
 
   it('PokeData#abilities', () => {
-    let actual = testObj['ハピナス'].abilities;
+    let actual = ハピナス.abilities;
     let except = ["しぜんかいふく", "てんのめぐみ"];
     assert.deepEqual(actual, except);
   });
