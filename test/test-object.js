@@ -10,6 +10,12 @@ testObj['フシギダネ'] = new PokeData({
     "national_id": 1 | 0,
     "name": "フシギダネ",
     "form_name": null,
+    "height": 7 | 0,
+    "weight": 69 | 0,
+    "types": [
+        "くさ",
+        "どく"
+    ],
     "base_stats": [
         45 | 0,
         49 | 0,
@@ -19,6 +25,7 @@ testObj['フシギダネ'] = new PokeData({
         65 | 0
     ],
     "gender_threshold": 31 | 0,
+    "catch_rate": 45 | 0,
     "held_items": {
         "rse": {
             "rarely": null,
@@ -31,7 +38,7 @@ testObj['フシギダネ'] = new PokeData({
             "always": null
         }
     },
-    "abilities": ["しんりょく", "しんりょく"]
+    "abilities": ["しんりょく"]
 });
 
 testObj['ピカチュウ'] = new PokeData({
@@ -39,6 +46,9 @@ testObj['ピカチュウ'] = new PokeData({
     "national_id": 25 | 0,
     "name": "ピカチュウ",
     "form_name": null,
+    "height": 4 | 0,
+    "weight": 60 | 0,
+    "types": ["でんき"],
     "base_stats": [
         35 | 0,
         55 | 0,
@@ -48,6 +58,7 @@ testObj['ピカチュウ'] = new PokeData({
         40
     ],
     "gender_threshold": 127 | 0,
+    "catch_rate": 190 | 0,
     "held_items": {
         "rse": {
             "rarely": "でんきだま",
@@ -60,7 +71,7 @@ testObj['ピカチュウ'] = new PokeData({
             "always": null
         }
     },
-    "abilities": ["せいでんき", "せいでんき"]
+    "abilities": ["せいでんき"]
 });
 
 testObj['ハピナス'] = new PokeData({
@@ -68,6 +79,9 @@ testObj['ハピナス'] = new PokeData({
     "national_id": 242 | 0,
     "name": "ハピナス",
     "form_name": null,
+    "height": 15 | 0,
+    "weight": 468 | 0,
+    "types": ["ノーマル"],
     "base_stats": [
         255 | 0,
         10 | 0,
@@ -77,6 +91,7 @@ testObj['ハピナス'] = new PokeData({
         135 | 0
     ],
     "gender_threshold": 254 | 0,
+    "catch_rate": 30 | 0,
     "held_items": {
         "rse": {
             "rarely": "しあわせタマゴ",
@@ -100,6 +115,9 @@ testObj['デオキシス'] = new PokeData({
     "national_id": 386,
     "name": "デオキシス",
     "form_name": "ノーマルフォルム",
+    "height": 17 | 0,
+    "weight": 608 | 0,
+    "types": ["エスパー"],
     "base_stats": [
         50,
         150,
@@ -109,6 +127,7 @@ testObj['デオキシス'] = new PokeData({
         50
     ],
     "gender_threshold": 255,
+    "catch_rate": 3 | 0,
     "held_items": {
         "rse": {
             "rarely": null,
@@ -121,5 +140,5 @@ testObj['デオキシス'] = new PokeData({
             "always": null
         }
     },
-    "abilities": ["プレッシャー", "プレッシャー"]
+    "abilities": ["プレッシャー"]
 });

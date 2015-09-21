@@ -10,7 +10,7 @@
     "rng"
   ],
   "scripts": {
-    "test": "mocha --compilers js:babel/register test/**/*.js",
+    "test": "mocha --compilers js:babel/register test/**/*.js"
   },
   "repository": "mizdra/gen3-poke-data",
   "license": "MIT",

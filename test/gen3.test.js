@@ -23,6 +23,20 @@ describe('PokeData', () => {
     testObj['デオキシス'].formName.should.equal('ノーマルフォルム');
   });
 
+  it('PokeData#height', () => {
+    testObj['フシギダネ'].height.should.equal(7 | 0);
+  });
+
+  it('PokeData#weight', () => {
+    testObj['フシギダネ'].weight.should.equal(69 | 0);
+  });
+
+  it('PokeData#types', () => {
+    let actual = testObj['フシギダネ'].types;
+    let except = ["くさ", "どく"];
+    assert.deepEqual(actual, except);
+  });
+
   it('PokeData#baseStats', () => {
     let actual = testObj['フシギダネ'].baseStats;
     let except = [45|0, 49|0, 49|0, 45|0, 65|0, 65|0];
@@ -31,6 +45,10 @@ describe('PokeData', () => {
 
   it('PokeData#genderThreshold', () => {
     testObj['フシギダネ'].genderThreshold.should.equal(31|0);
+  });
+
+  it('PokeData#catchRate', () => {
+    testObj['デオキシス'].catchRate.should.equal(3|0);
   });
 
   it('PokeData#heldItems', () => {
