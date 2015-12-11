@@ -1,11 +1,11 @@
-'use asm';
-
 // Import modules
 import runSequence from 'run-sequence';
 import del from 'del';
 import gulp from 'gulp';
-const $ = require('gulp-load-plugins')();
-//import util from 'util';
+import gulpLoadPlugins from 'gulp-load-plugins';
+
+const $ = gulpLoadPlugins();
+
 
 // Define directory paths
 const srcDir = './src';
