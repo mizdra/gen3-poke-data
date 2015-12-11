@@ -1,75 +1,73 @@
-'use asm';
-
 import should from 'should';
 import assert from 'assert';
 import PokeData from '../dist';
-import {フシギダネ, ピカチュウ, ハピナス, デオキシス} from './test-object';
+import {sample1} from './test-object';
 
 describe('PokeData', () => {
 
   it('PokeData#id', () => {
-    デオキシス.id.should.equal(416);
+    sample1.id.should.equal(10);
   });
 
   it('PokeData#nationalId', () => {
-    デオキシス.nationalId.should.equal(386);
+    sample1.nationalId.should.equal(20);
   });
 
   it('PokeData#name', () => {
-    フシギダネ.name.should.equal('フシギダネ');
+    sample1.name.should.equal('Sample1');
   });
 
   it('PokeData#formName', () => {
-    デオキシス.formName.should.equal('ノーマルフォルム');
+    sample1.formName.should.equal('フォルム');
   });
 
   it('PokeData#height', () => {
-    フシギダネ.height.should.equal(7 | 0);
+    sample1.height.should.equal(30);
   });
 
   it('PokeData#weight', () => {
-    フシギダネ.weight.should.equal(69 | 0);
+    sample1.weight.should.equal(40);
   });
 
   it('PokeData#types', () => {
-    let actual = フシギダネ.types;
-    let except = ["くさ", "どく"];
+    let actual = sample1.types;
+    let except = ["みず", "ドラゴン"];
     assert.deepEqual(actual, except);
   });
 
   it('PokeData#baseStats', () => {
-    let actual = フシギダネ.baseStats;
-    let except = [45|0, 49|0, 49|0, 45|0, 65|0, 65|0];
+    let actual = sample1.baseStats;
+    let except = [50, 60, 70, 80, 90, 100];
     assert.deepEqual(actual, except);
   });
 
   it('PokeData#genderThreshold', () => {
-    フシギダネ.genderThreshold.should.equal(31|0);
+    sample1.genderThreshold.should.equal(110);
   });
 
   it('PokeData#catchRate', () => {
-    デオキシス.catchRate.should.equal(3|0);
+    sample1.catchRate.should.equal(120);
   });
 
   it('PokeData#heldItems', () => {
-    let actual = ピカチュウ.heldItems;
+    let actual = sample1.heldItems;
     let except = {
         "rse": {
-            "rarely": "でんきだま",
-            "sometimes": "オレンのみ",
+            "rarely": "りゅうのウロコ",
+            "sometimes": "りゅうのキバ",
             "always": null
         },
         "frlg": {
             "rarely": null,
             "sometimes": null,
-            "always": null
+            "always": "ドラゴンプレート"
         }
     };
     assert.deepEqual(actual, except);
   });
 
   it('PokeData#abilities', () => {
-    let actual = ハピナス.abilities;
+    let actual = sample1.abilities;
     let except = ["しぜんかいふく", "てんのめぐみ"];
     assert.deepEqual(actual, except);
   });
