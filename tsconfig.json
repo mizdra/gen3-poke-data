@@ -10,6 +10,7 @@
     "files": [
         "pokeData.ts",
         "test.ts",
-        "test-object.ts"
+        "test-object.ts",
+        "gulp-file.ts"
     ]
 }
