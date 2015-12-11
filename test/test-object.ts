@@ -4,7 +4,7 @@ export const sample1 = new PokeData({
     "id": 10,
     "national_id": 20,
     "name": "Sample1",
-    "form_name": "フォルム名",
+    "form_name": "フォルム",
     "height": 30,
     "weight": 40,
     "types": [
