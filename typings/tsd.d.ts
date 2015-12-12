@@ -14,3 +14,5 @@
 /// <reference path="power-assert-formatter/power-assert-formatter.d.ts" />
 /// <reference path="power-assert/power-assert.d.ts" />
 /// <reference path="mocha/mocha.d.ts" />
+/// <reference path="gulp-typescript/gulp-typescript.d.ts" />
+/// <reference path="merge2/merge2.d.ts" />
