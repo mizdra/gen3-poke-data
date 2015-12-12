@@ -1,16 +1,16 @@
 export default class PokeData {
-  id: number;
-  nationalId: number;
-  name: string;
-  formName: string;
-  height: number;
-  weight: number;
-  types: string[];
-  baseStats: number[];
-  genderThreshold: number;
-  catchRate: number;
-  heldItems: string[];
-  abilities: string[];
+  public id: number;
+  public nationalId: number;
+  public name: string;
+  public formName: string;
+  public height: number;
+  public weight: number;
+  public types: string[];
+  public baseStats: number[];
+  public genderThreshold: number;
+  public catchRate: number;
+  public heldItems: string[];
+  public abilities: string[];
   
   constructor(json: any) {
     this.id = json.id;
