@@ -15,14 +15,14 @@ const tsProject = ts.createProject('tsconfig.json');
 gulp.task('clean', del.bind(null, 'lib'));
 
 gulp.task('build:ts', () => {
-    let tsResult = gulp.src('src/**/*.ts')
+    let tsResult = gulp.src('src/**/*.ts', {base: 'src'})
         .pipe(sourcemaps.init())
         .pipe(ts(tsProject));
 
     return merge([
         tsResult.dts.pipe(gulp.dest('lib')),
         tsResult.js
-            .pipe(sourcemaps.write())
+            .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest('lib'))
     ]);
 });
