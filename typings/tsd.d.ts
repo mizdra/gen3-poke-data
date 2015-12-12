@@ -10,3 +10,7 @@
 /// <reference path="orchestrator/orchestrator.d.ts" />
 /// <reference path="q/Q.d.ts" />
 /// <reference path="run-sequence/run-sequence.d.ts" />
+/// <reference path="empower/empower.d.ts" />
+/// <reference path="power-assert-formatter/power-assert-formatter.d.ts" />
+/// <reference path="power-assert/power-assert.d.ts" />
+/// <reference path="mocha/mocha.d.ts" />
