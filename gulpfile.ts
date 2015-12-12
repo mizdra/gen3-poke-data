@@ -1,8 +1,10 @@
+/// <reference path="./typings/tsd.d.ts" />
+
 // Import modules
-import runSequence from 'run-sequence';
-import del from 'del';
-import gulp from 'gulp';
-import gulpLoadPlugins from 'gulp-load-plugins';
+import runSequence = require('run-sequence');
+import del = require('del');
+import gulp = require('gulp');
+import gulpLoadPlugins = require('gulp-load-plugins');
 
 const $ = gulpLoadPlugins();
 

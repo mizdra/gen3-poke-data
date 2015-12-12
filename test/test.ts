@@ -1,7 +1,6 @@
 /// <reference path="../typings/tsd.d.ts" />
 
 import * as assert from 'power-assert';
-import PokeData from '../dist';
 import {sample1} from './test-object';
 
 describe('PokeData', () => {
