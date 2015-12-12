@@ -68,7 +68,7 @@ describe('PokeData', () => {
 
   it('PokeData#abilities', () => {
     let actual = sample1.abilities;
-    let except = ["しぜんかいふく", "てんのめぐみ"];
+    let except = ["すいすい", "スナイパー"];
     assert.deepEqual(actual, except);
   });
 });
