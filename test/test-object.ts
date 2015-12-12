@@ -1,6 +1,6 @@
 import PokeData from '../dist';
 
-export const sample1 = new PokeData({
+export const sample1: PokeData = new PokeData({
     "id": 10,
     "national_id": 20,
     "name": "Sample1",
