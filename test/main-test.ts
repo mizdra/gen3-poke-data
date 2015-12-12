@@ -6,27 +6,27 @@ import {sample1} from './sample-object';
 describe('PokeData', () => {
 
   it('PokeData#id', () => {
-    sample1.id.should.equal(10);
+    assert(sample1.id === 10);
   });
 
   it('PokeData#nationalId', () => {
-    sample1.nationalId.should.equal(20);
+    assert(sample1.nationalId === 20);
   });
 
   it('PokeData#name', () => {
-    sample1.name.should.equal('Sample1');
+    assert(sample1.name === 'Sample1');
   });
 
   it('PokeData#formName', () => {
-    sample1.formName.should.equal('フォルム');
+    assert(sample1.formName === 'フォルム');
   });
 
   it('PokeData#height', () => {
-    sample1.height.should.equal(30);
+    assert(sample1.height === 30);
   });
 
   it('PokeData#weight', () => {
-    sample1.weight.should.equal(40);
+    assert(sample1.weight === 40);
   });
 
   it('PokeData#types', () => {
@@ -42,11 +42,11 @@ describe('PokeData', () => {
   });
 
   it('PokeData#genderThreshold', () => {
-    sample1.genderThreshold.should.equal(110);
+    assert(sample1.genderThreshold === 110);
   });
 
   it('PokeData#catchRate', () => {
-    sample1.catchRate.should.equal(120);
+    assert(sample1.catchRate === 120);
   });
 
   it('PokeData#heldItems', () => {
