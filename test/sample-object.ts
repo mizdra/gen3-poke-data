@@ -1,4 +1,4 @@
-import PokeData from '../dist';
+import PokeData from '../src/pokeData';
 
 export const sample1: PokeData = new PokeData({
     "id": 10,
