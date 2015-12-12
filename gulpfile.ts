@@ -5,6 +5,7 @@ import runSequence = require('run-sequence');
 import del = require('del');
 import gulp = require('gulp');
 import ts = require('gulp-typescript');
+import sourcemaps = require('gulp-sourcemaps');
 import merge = require('merge2');
 
 const tsProject = ts.createProject('tsconfig.json');
@@ -15,11 +16,14 @@ gulp.task('clean', del.bind(null, 'lib'));
 
 gulp.task('build:ts', () => {
     let tsResult = gulp.src('src/**/*.ts')
-      .pipe(ts(tsProject));
+        .pipe(sourcemaps.init())
+        .pipe(ts(tsProject));
 
     return merge([
         tsResult.dts.pipe(gulp.dest('lib')),
-        tsResult.js.pipe(gulp.dest('lib'))
+        tsResult.js
+            .pipe(sourcemaps.write())
+            .pipe(gulp.dest('lib'))
     ]);
 });
 
