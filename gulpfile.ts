@@ -7,30 +7,24 @@ import gulp = require('gulp');
 import ts = require('gulp-typescript');
 import merge = require('merge2');
 
-
-// Define directory paths
-const srcDir = './src';
-const testDir = './test';
-const buildDir = './dist';
-
 const tsProject = ts.createProject('tsconfig.json');
 
 
 // Gulp tasks
-gulp.task('clean', del.bind(null, buildDir));
+gulp.task('clean', del.bind(null, 'lib'));
 
 gulp.task('build:ts', () => {
-    let tsResult = gulp.src(`${srcDir}/**/*.ts`)
+    let tsResult = gulp.src('src/**/*.ts')
       .pipe(ts(tsProject));
 
     return merge([
-        tsResult.dts.pipe(gulp.dest(`${buildDir}/definitions`)),
-        tsResult.js.pipe(gulp.dest(`${buildDir}/js`))
+        tsResult.dts.pipe(gulp.dest('lib')),
+        tsResult.js.pipe(gulp.dest('lib'))
     ]);
 });
 
 gulp.task('watch', ['default'], () => {
-    gulp.watch(`${srcDir}/**/*.ts`, ['build:ts']);
+    gulp.watch('src/**/*.ts', ['build:ts']);
 });
 
 gulp.task('default', cb => {
