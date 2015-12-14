@@ -5,6 +5,7 @@
   "author": "mizdra <pp.mizdra@gmail.com>",
   "homepage": "https://github.com/mizdra/gen3-poke-data",
   "main": "./lib/pokeData.js",
+  "typings": "./lib/pokeData.d.ts",
   "keywords": [
     "pokemon",
     "rng"
