@@ -6,6 +6,7 @@ import del = require('del');
 import gulp = require('gulp');
 import ts = require('gulp-typescript');
 import sourcemaps = require('gulp-sourcemaps');
+import uglify = require('gulp-uglify');
 import merge = require('merge2');
 
 const tsProject = ts.createProject('tsconfig.json');
@@ -22,6 +23,7 @@ gulp.task('build:ts', () => {
     return merge([
         tsResult.dts.pipe(gulp.dest('lib')),
         tsResult.js
+            .pipe(uglify())
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest('lib'))
     ]);
