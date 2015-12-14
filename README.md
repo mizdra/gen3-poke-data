@@ -22,6 +22,12 @@ var pokedata = new PokeData({
     "national_id": 1 | 0,
     "name": "フシギダネ",
     "form_name": null,
+    "height": 7 | 0,
+    "weight": 69 | 0,
+    "types": [
+        "くさ",
+        "どく"
+    ],
     "base_stats": [
         45 | 0,
         49 | 0,
@@ -31,6 +37,7 @@ var pokedata = new PokeData({
         65 | 0
     ],
     "gender_threshold": 31 | 0,
+    "catch_rate": 45 | 0,
     "held_items": {
         "rse": {
             "rarely": null,
@@ -43,7 +50,7 @@ var pokedata = new PokeData({
             "always": null
         }
     },
-    "abilities": ["しんりょく", "しんりょく"]
+    "abilities": ["しんりょく"]
 });
 
 console.log(pokedata.name); // => 'フシギダネ'
