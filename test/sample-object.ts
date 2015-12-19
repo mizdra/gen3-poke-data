@@ -1,4 +1,4 @@
-import PokeData from '../'; // import PokeData from '../lib/pokeData.js';
+import {PokeData} from '../'; // import PokeData from '../lib/pokeData.js';
 
 export const sample1: PokeData = new PokeData({
     "id": 10,
