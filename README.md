@@ -63,7 +63,7 @@ $ git clone https://github.com/mizdra/gen3-poke-data.git
 $ cd gen3-poke-data
 $ npm install -g  mocha gulp
 $ npm install
-$ tsd install
+$ dtsm install
 $ gulp
 ```
 
