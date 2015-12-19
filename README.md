@@ -12,12 +12,12 @@ $ npm install @mizdra/gen3-poke-data
 
 ```js
 // ES5 import
-var PokeData = require('@mizdra/gen3-poke-data');
+var PokeData = require('@mizdra/gen3-poke-data').PokeData;
 
 // ES6 import
-import PokeData from '@mizdra/gen3-poke-data';
+import {PokeData} from '@mizdra/gen3-poke-data';
 
-let pokedata:PokeData = new PokeData({
+let pokedata = new PokeData({
     "id": 1,
     "national_id": 1,
     "name": "フシギダネ",
