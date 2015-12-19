@@ -1,17 +1,17 @@
 import jsonSchema from './jsonSchema';
 
 export default class PokeData {
-    public id: number;
-    public nationalId: number;
-    public name: string;
-    public formName: string;
-    public height: number;
-    public weight: number;
-    public types: string[];
-    public baseStats: number[];
-    public genderThreshold: number;
-    public catchRate: number;
-    public heldItems: {
+    id: number;
+    nationalId: number;
+    name: string;
+    formName: string;
+    height: number;
+    weight: number;
+    types: string[];
+    baseStats: number[];
+    genderThreshold: number;
+    catchRate: number;
+    heldItems: {
         rse: {
             rarely: string,
             sometimes: string,
@@ -23,7 +23,7 @@ export default class PokeData {
             always: string
         }
     };
-    public abilities: string[];
+    abilities: string[];
 
     constructor(json: jsonSchema) {
         this.id = json.id;
