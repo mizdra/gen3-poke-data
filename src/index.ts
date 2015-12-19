@@ -1,3 +1,3 @@
-import jsonSchema from './jsonSchema';
-import pokeData from './pokeData';
-export {jsonSchema, pokeData};
+import JSONSchema from './jsonSchema';
+import PokeData from './pokeData';
+export {JSONSchema, PokeData};
