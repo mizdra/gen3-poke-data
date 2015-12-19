@@ -61,7 +61,7 @@ console.log(pokedata.name); // => 'フシギダネ'
 ```bash
 $ git clone https://github.com/mizdra/gen3-poke-data.git
 $ cd gen3-poke-data
-$ npm install -g  mocha gulp
+$ npm install -g  mocha gulp dtsm
 $ npm install
 $ dtsm install
 $ gulp
