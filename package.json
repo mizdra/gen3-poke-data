@@ -1,7 +1,7 @@
 {
   "name": "@mizdra/gen3-poke-data",
   "description": "第三世代ポケモン情報クラス",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "author": "mizdra <pp.mizdra@gmail.com>",
   "homepage": "https://github.com/mizdra/gen3-poke-data",
   "main": "./lib/index.js",
