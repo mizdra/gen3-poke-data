@@ -1,3 +1,5 @@
+'use strict';
+
 import assert from 'power-assert';
 import {sample1} from './sample-object';
 

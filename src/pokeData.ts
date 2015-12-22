@@ -1,3 +1,5 @@
+'use strict';
+
 import jsonSchema from './jsonSchema';
 
 export default class PokeData {
